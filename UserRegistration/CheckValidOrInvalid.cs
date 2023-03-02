@@ -49,6 +49,14 @@ namespace UserRegistration
             string[] arr = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com", "abc", "abc@.com.my", "abc123@gmail.a", "abc123@.com", "abc123@.com.com", ".abc@abc.com", "abc()*@gmail.com", "abc@%*.com", "abc..2002@gmail.com", "abc.@gmail.com", "abc@abc@gmail.com", "abc@gmail.com.1a", "abc@gmail.com.aa.au" };
             CheckInput(pattern, arr);
         }
+
+        // UC4
+        public static void ValidMobileNumber()
+        {
+            string pattern = "^91[ ]{1}[6-9]{1}[0-9]{9}$";
+            string[] arr = { "91 7726005633", "917742735615", "91 5231476823", "05234567812", "0 6234567823", "915231476823", "9191 7742720112" };
+            CheckInput(pattern, arr);
+        }
     }
 }
 
