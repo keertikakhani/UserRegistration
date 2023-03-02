@@ -10,6 +10,7 @@ namespace UserRegistration
 
             CheckValidOrInvalid.ValidFirstName();
             CheckValidOrInvalid.ValidLastName();
+            CheckValidOrInvalid.ValidEmailAddress();
 
             Console.ReadLine();
        }
