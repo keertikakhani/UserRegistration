@@ -9,22 +9,37 @@ namespace UserRegistration
 {
     public class CheckValidOrInvalid
     {
-        public static void ValidFirstName()
+        public static void CheckInput(string pattern, string[] arr)
         {
-            string pattern = "^[A-Z]{1}[a-z]{2,}$";
-            string[] arr = { "keerti", "Keerti" };
-
             foreach (string input in arr)
             {
                 if (Regex.IsMatch(input, pattern))
                 {
-                    Console.WriteLine("{0} is Valid First Name", input);
+                    Console.WriteLine("{0} is Valid", input);
                 }
                 else
                 {
-                    Console.WriteLine("{0} is invalid First Name", input);
+                    Console.WriteLine("{0} is invalid", input);
                 }
             }
         }
+
+        // UC1
+        public static void ValidFirstName()
+        {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            string[] arr = { "keerti", "Keerti" };
+            CheckInput(pattern, arr);
+        }
+
+        // UC2
+        public static void ValidLastName()
+        {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            string[] arr = { "kakhani", "Kakhani" };
+            CheckInput(pattern, arr);
+        }
     }
 }
+
+

@@ -9,6 +9,7 @@ namespace UserRegistration
             Console.WriteLine("Welcome to User Registration Program");
 
             CheckValidOrInvalid.ValidFirstName();
+            CheckValidOrInvalid.ValidLastName();
 
             Console.ReadLine();
        }
