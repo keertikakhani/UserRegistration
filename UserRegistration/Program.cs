@@ -12,6 +12,7 @@ namespace UserRegistration
             CheckValidOrInvalid.ValidLastName();
             CheckValidOrInvalid.ValidEmailAddress();
             CheckValidOrInvalid.ValidMobileNumber();
+            CheckValidOrInvalid.ValidPassword();
 
             Console.ReadLine();
        }

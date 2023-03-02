@@ -57,6 +57,14 @@ namespace UserRegistration
             string[] arr = { "91 7726005633", "917742735615", "91 5231476823", "05234567812", "0 6234567823", "915231476823", "9191 7742720112" };
             CheckInput(pattern, arr);
         }
+
+        // UC5
+        public static void ValidPassword()
+        {
+            string pattern = "^[a-zA-Z0-9!=@?#$.%+&*_]{8,}$";
+            string[] arr = { "abA01", "abcdAABC", "abc11ABC", "AAbc@%11&*" };
+            CheckInput(pattern, arr);
+        }
     }
 }
 
